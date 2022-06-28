@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Agua</string>
+    <string name="txt_welcome">Welcome</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="txt_forgot_password"><u>FORGOT YOUR PASSWORD?</u></string>
+    <string name="txt_not_account">NOT AN ACCOUNT?</string>
+    <string name="txt_create_account"><u>CREATE ACCOUNT</u></string>
+    <string name="txt_sign_up">Registro</string>
+    <string name="txtv_email">CORREO ELECTRÓNICO</string>
+    <string name="txtv_password">CONTRASEÑA</string>
+    <string name="btn_send_email">ENVIAR</string>
+    <string name="txtv_type_code">ESCRIBE TU CÓDIGO</string>
+    <string name="txtv_resend_email"><u>REENVIAR CORREO</u></string>
+    <string name="btn_insertcode">INSERTAR</string>
+    <string name="btn_exit">SALIR</string>
+    <string name="btn_register">REGISTRAR</string>
+    <string name="txtv_nombre">NOMBRE</string>
+    <string name="txtv_apPat">Ap. Paterno</string>
+    <string name="txtv_apMat">Ap. Materno</string>
+</resources>
