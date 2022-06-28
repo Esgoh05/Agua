@@ -26,10 +26,10 @@
 
 
         <RelativeLayout
-            android:id="@+id/txtb_typecode"
-            android:layout_width="250dp"
+            android:id="@+id/txtb_nombre"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginTop="232dp"
+            android:layout_marginTop="200dp"
             android:background="@drawable/cuadrado_corners"
             android:clickable="true"
             android:elevation="20dp"
@@ -40,23 +40,108 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <EditText
-                android:id="@+id/edtTNumberSigned"
+                android:id="@+id/edtNombre"
                 android:layout_width="240dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:ems="10"
                 android:hint="@string/txtv_nombre"
-                android:inputType="numberSigned"
+                android:inputType="textPersonName"
                 android:textAlignment="center"
                 android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/txtb_ap_pat"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtb_nombre">
+
+            <EditText
+                android:id="@+id/edtApPat"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:ems="10"
+                android:hint="@string/txtv_apPat"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/txtb_ap_mat"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtb_ap_pat">
+
+            <EditText
+                android:id="@+id/edtApMat"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:ems="10"
+                android:hint="@string/txtv_apMat"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/txtb_tel"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtb_ap_mat">
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:ems="10"
+                android:hint="@string/txtv_tel"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
         </RelativeLayout>
 
         <Button
             android:id="@+id/btn_register"
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="40dp"
             android:elevation="20dp"
             android:text="@string/btn_register"
@@ -64,7 +149,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtb_tel" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
