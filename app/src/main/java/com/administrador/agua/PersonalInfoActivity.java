@@ -1,6 +1,7 @@
 package com.administrador.agua;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,7 +28,10 @@ public class PersonalInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_info);
-        setTitle("Información personal");
+        //setTitle("Información personal");
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.tittle_personal_info);
 
         btnRegister = findViewById(R.id.btn_register);
         txtvNombre = findViewById(R.id.edtNombre);
@@ -49,18 +53,11 @@ public class PersonalInfoActivity extends AppCompatActivity {
                 mostrarDialogo();
             }
         });
-
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.personal_info_menu, menu);
         return super.onCreateOptionsMenu(menu);
-    }
-
-    public void Siguiente(View view){
-        Intent siguiente = new Intent(this, SignUpActivity.class);
-        startActivity(siguiente);
     }
 
     @Override
@@ -75,10 +72,12 @@ public class PersonalInfoActivity extends AppCompatActivity {
 
     private void mostrarDialogo(){
         AlertDialog.Builder builder = new AlertDialog.Builder( PersonalInfoActivity. this);
-        builder.setTitle("Titulo");
-        builder.setMessage("Solo es una pruena").setPositiveButton("Si", new DialogInterface.OnClickListener() {
+        builder.setIcon(R.drawable.ic_baseline_task_alt_24);
+        builder.setTitle("Confirmación");
+        builder.setMessage("¿La información insertada es correcta?").setPositiveButton("Si", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int which) {
+               finish();
             }
         })
         .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
@@ -88,6 +87,11 @@ public class PersonalInfoActivity extends AppCompatActivity {
             }
         }).setCancelable(false)
             .show();
+    }
+
+    public void siguiente(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
 }

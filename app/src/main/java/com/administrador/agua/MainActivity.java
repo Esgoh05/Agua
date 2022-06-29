@@ -47,6 +47,6 @@ public class MainActivity extends AppCompatActivity {
     public void Siguiente(View view){
         Intent siguiente = new Intent(this, SignUpActivity.class);
         startActivity(siguiente);
-        finish();
+        //finish();
     }
 }
