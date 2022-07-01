@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/ChanceColor">
         <activity
+            android:name=".Pager_Priv_Activity"
+            android:exported="false" />
+        <activity
             android:name=".PersonalInfoActivity"
             android:exported="false" />
         <activity

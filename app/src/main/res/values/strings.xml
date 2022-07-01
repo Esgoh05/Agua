@@ -18,4 +18,6 @@
     <string name="txtv_apPat">APELLIDO PATERNO</string>
     <string name="txtv_apMat">APELLIDO MATERNO</string>
     <string name="txtv_tel">TELEFONO</string>
+    <string name="txtv_hello">HOLA</string>
+    <string name="txtv_aviso_priv">Tus datos serán tratados con condifencialidad sin fines de lucro.</string>
 </resources>

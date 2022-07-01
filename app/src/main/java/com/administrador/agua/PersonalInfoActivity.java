@@ -31,7 +31,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
         //setTitle("Información personal");
 
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.tittle_personal_info);
+        getSupportActionBar().setCustomView(R.layout.title_personal_info);
 
         btnRegister = findViewById(R.id.btn_register);
         txtvNombre = findViewById(R.id.edtNombre);

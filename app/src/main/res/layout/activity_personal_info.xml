@@ -4,8 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/fondo_agua"
     android:layout_height="match_parent"
     android:fillViewport="true">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,6 +48,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:ems="10"
+                android:textAllCaps="true"
                 android:hint="@string/txtv_nombre"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
@@ -74,6 +77,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:ems="10"
+                android:textAllCaps="true"
                 android:hint="@string/txtv_apPat"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
@@ -155,4 +159,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>
