@@ -62,8 +62,8 @@ public class SignUpActivity extends AppCompatActivity {
     });
     }
     public void Siguiente(View view){
-        //Intent siguiente = new Intent(this, PersonalInfoActivity.class);
-        Intent siguiente = new Intent(this, Pager_Priv_Activity.class);
+        Intent siguiente = new Intent(this, PersonalInfoActivity.class);
+        //Intent siguiente = new Intent(this, Pager_Priv_Activity.class);
         startActivity(siguiente);
         finish();
     }

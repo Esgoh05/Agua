@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btn_options"
+        android:title="mas"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        app:showAsAction="always"
+        android:orderInCategory="100">
+
+        <menu>
+
+            <item
+                android:id="@+id/btn_salir"
+                android:icon="@drawable/ic_baseline_cancel_24"
+                android:title="@string/btn_exit"
+                android:orderInCategory="100"
+                />
+
+        </menu>
+
+    </item>
+
+</menu>

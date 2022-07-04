@@ -7,7 +7,6 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         edtEmail.setBackgroundColor(Color.TRANSPARENT);
         edtPassword.setBackgroundColor(Color.TRANSPARENT);
 
+
+
     }
 
     @Override
@@ -47,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
     public void Siguiente(View view){
         Intent siguiente = new Intent(this, SignUpActivity.class);
         startActivity(siguiente);
+        //finish();
+    }
+
+    public void IrHome(View v){
+        Intent intent = new Intent(this, HomeNavDrawActivity.class);
+        startActivity(intent);
         //finish();
     }
 }

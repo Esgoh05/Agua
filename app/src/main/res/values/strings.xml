@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Agua</string>
-    <string name="txt_welcome">Welcome</string>
+    <string name="txt_welcome">Bienvenido</string>
     <string name="btn_login">LOGIN</string>
     <string name="txt_forgot_password"><u>FORGOT YOUR PASSWORD?</u></string>
     <string name="txt_not_account">NOT AN ACCOUNT?</string>
@@ -20,4 +20,16 @@
     <string name="txtv_tel">TELEFONO</string>
     <string name="txtv_hello">HOLA</string>
     <string name="txtv_aviso_priv">Tus datos serán tratados con condifencialidad sin fines de lucro.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_home_nav_draw">HomeNavDrawActivity</string>
 </resources>
