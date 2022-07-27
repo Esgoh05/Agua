@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.administrador.agua.fragments.PageFragment1;
 import com.administrador.agua.fragments.PageFragment2;
@@ -18,6 +21,7 @@ public class Pager_Priv_Activity extends AppCompatActivity {
 
     private ViewPager pager;
     private PagerAdapter pagerAdapter;
+    private Button btnSiguiente;
     SpringDotsIndicator springDotsIndicator;
 
     @Override
@@ -31,8 +35,12 @@ public class Pager_Priv_Activity extends AppCompatActivity {
         list.add(new PageFragment2());
 
         pager = findViewById(R.id.pager);
+        btnSiguiente = findViewById(R.id.btn_siguiente);
         springDotsIndicator = findViewById(R.id.spring_dots_indicator);
         pagerAdapter = new Slider(getSupportFragmentManager(), list);
+
+        btnSiguiente.setBackgroundResource(R.drawable.custom_button); //shape, contorno de esquinas para boton
+        btnSiguiente.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#1E88E5")));
 
         pager.setAdapter(pagerAdapter);
         springDotsIndicator.setViewPager(pager);

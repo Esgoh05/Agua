@@ -32,4 +32,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_home_nav_draw">HomeNavDrawActivity</string>
+    <string name="txtv_aviso_bien">Estamos muy felices porque ahora eres parte de esta gran familia y mision.</string>
+    <string name="btn_next">SIGUIENTE</string>
 </resources>
