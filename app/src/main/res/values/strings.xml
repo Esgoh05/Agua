@@ -19,7 +19,7 @@
     <string name="txtv_apMat">APELLIDO MATERNO</string>
     <string name="txtv_tel">TELEFONO</string>
     <string name="txtv_hello">HOLA</string>
-    <string name="txtv_aviso_priv">Tus datos serán tratados con condifencialidad sin fines de lucro.</string>
+    <string name="txtv_aviso_priv">Tus datos serán tratados con condifencialidad y sin fines de lucro.</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -32,6 +32,10 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_home_nav_draw">HomeNavDrawActivity</string>
-    <string name="txtv_aviso_bien">Estamos muy felices porque ahora eres parte de esta gran familia y mision.</string>
+    <string name="txtv_aviso_bien">Estamos muy felices porque ahora eres parte de esta gran misión.</string>
     <string name="btn_next">SIGUIENTE</string>
+    <string name="btn_next_pi">ENTENDIDO</string>
+    <string name="txtv_aviso_emp">Es momento de crear tu perfil y completarlo.</string>
+    <string name="txtv_aviso_casiemp">Casi empezamos</string>
+
 </resources>
