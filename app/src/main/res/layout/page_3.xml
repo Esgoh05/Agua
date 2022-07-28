@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/img_personal_info"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/gota_em"
+        android:background="@drawable/gota_welcome"
         android:foregroundGravity="center_vertical"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,9 +20,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="190dp"
+        android:text="Recuerda"
+        android:textAlignment="center"
+        android:textColor="#607D8B"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="300dp"
         android:gravity="center"
         android:text="@string/txtv_aviso_priv"
         android:textAlignment="center"

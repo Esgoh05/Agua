@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Siguiente(View view){
-        Intent siguiente = new Intent(this, SignUpActivity.class);
+        Intent siguiente = new Intent(this, Pager_Priv_Activity.class);
         startActivity(siguiente);
         //finish();
     }

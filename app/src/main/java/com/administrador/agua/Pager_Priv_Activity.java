@@ -56,7 +56,7 @@ public class Pager_Priv_Activity extends AppCompatActivity {
 
         btnIrAcPI.setOnClickListener((View v) -> {
             // do something here
-            Intent intent = new Intent(this, PersonalInfoActivity.class);
+            Intent intent = new Intent(this, SignUpActivity.class);
             startActivity(intent);
             finish();
         });
