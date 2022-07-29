@@ -49,10 +49,14 @@
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/Agua/app/src/main/res/menu/home_nav_draw.xml" value="0.1" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/Agua/app/src/main/res/menu/main_menu.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/Agua/app/src/main/res/menu/personal_info_menu.xml" value="0.25" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/cuadrado_corners.xml" value="0.1" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/custom_button.xml" value="0.1" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/degradado_btn.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/page_3.xml" value="0.1" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_aviso_privacidad.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_home_nav_draw.xml" value="0.1" />
-        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_main.xml" value="0.17481884057971014" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_main.xml" value="0.4043887147335423" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_pager_priv.xml" value="0.15" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_personal_info.xml" value="0.22" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />

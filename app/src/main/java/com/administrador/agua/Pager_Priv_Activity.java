@@ -15,7 +15,6 @@ import android.widget.Button;
 import com.administrador.agua.fragments.PageFragment1;
 import com.administrador.agua.fragments.PageFragment2;
 import com.administrador.agua.fragments.PageFragment3;
-import com.google.android.material.tabs.TabLayout;
 import com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator;
 
 import java.util.ArrayList;
@@ -51,7 +50,7 @@ public class Pager_Priv_Activity extends AppCompatActivity {
         btnSiguiente.setBackgroundResource(R.drawable.custom_button); //shape, contorno de esquinas para boton
         btnSiguiente.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#1E88E5")));
 
-        btnIrAcPI.setBackgroundResource(R.drawable.custom_button); //shape, contorno de esquinas para boton
+        btnIrAcPI.setBackgroundResource(R.drawable.degradado_btn); //shape, contorno de esquinas para boton
         btnIrAcPI.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#1E88E5")));
 
         btnIrAcPI.setOnClickListener((View v) -> {
