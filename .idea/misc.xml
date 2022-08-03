@@ -52,13 +52,18 @@
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/cuadrado_corners.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/custom_button.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/degradado_btn.xml" value="0.1" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/ic_baseline_mail_outline_24.xml" value="0.1" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.1" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/page_3.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_aviso_privacidad.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_home_nav_draw.xml" value="0.1" />
-        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_main.xml" value="0.4043887147335423" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_main.xml" value="0.2401263823064771" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_main_nuevo.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_pager_priv.xml" value="0.15" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_personal_info.xml" value="0.22" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/activity_sign_up.xml" value="0.3663949275362319" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
@@ -67,6 +72,7 @@
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/page_2.xml" value="0.1" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/page_3.xml" value="0.16" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/pager_prueba.xml" value="0.15" />
+        <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/personal_info.xml" value="0.2037914691943128" />
         <entry key="..\:/Users/UAEM/StudioProjects/Agua/app/src/main/res/layout/title_personal_info.xml" value="0.1" />
       </map>
     </option>

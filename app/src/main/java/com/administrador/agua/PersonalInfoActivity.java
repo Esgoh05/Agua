@@ -27,11 +27,13 @@ public class PersonalInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_personal_info);
+        //setContentView(R.layout.activity_personal_info);
+        setContentView(R.layout.personal_info);
         //setTitle("Información personal");
 
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.title_personal_info);
+        getSupportActionBar().hide(); //funcion ocultar barra menu
+        //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        //getSupportActionBar().setCustomView(R.layout.title_personal_info);
 
         btnRegister = findViewById(R.id.btn_register);
         txtvNombre = findViewById(R.id.edtNombre);

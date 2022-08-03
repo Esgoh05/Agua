@@ -12,16 +12,17 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.administrador.agua.validacion.Validacion;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private Button btnSend;
-    private EditText edtMail;
+    private Button btnSend, btnInsertCode;
+    private EditText edtMail, edttype_code;
     private ImageView imgsend_email;
-    private EditText edttype_code;
     private RelativeLayout textTypeCode;
     private TextView txtvResend;
-    private Button btnInsertCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,10 @@ public class SignUpActivity extends AppCompatActivity {
         btnSend.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(imgsend_email.getVisibility() == View.VISIBLE){
+                    validacionCampos();
+
+
+
                     btnSend.setVisibility(View.GONE);
                     textTypeCode.setVisibility(View.VISIBLE);
                     txtvResend.setVisibility(View.VISIBLE);
@@ -61,10 +66,35 @@ public class SignUpActivity extends AppCompatActivity {
         }
     });
     }
+
+    public void validacionCampos(){
+        if(!validarEmail()){
+            return;
+        }
+        Toast.makeText(SignUpActivity.this, "Por favor revisa tu correo, hemos enviado un código de verificación.", Toast.LENGTH_SHORT).show();
+    }
+
     public void Siguiente(View view){
         //Intent siguiente = new Intent(this, PersonalInfoActivity.class);
         Intent siguiente = new Intent(this, PersonalInfoActivity.class);
         startActivity(siguiente);
         finish();
+    }
+
+    public boolean validarEmail(){
+        String email = edtMail.getText().toString();
+
+        if(email.isEmpty()){
+            edtMail.setError("Campo invalido");
+            return false;
+        }
+        else if (!Validacion.emailValidacion(email)){
+            edtMail.setError("Por favor, ingrese un email valido");
+            return false;
+        }
+        else{
+            edtMail.setError(null);
+            return true;
+        }
     }
 }

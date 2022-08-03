@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setTheme(R.style.ChanceColor);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main_nuevo);
 
         getSupportActionBar().hide(); //funcion ocultar barra menu
 
