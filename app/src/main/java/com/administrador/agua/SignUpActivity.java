@@ -52,7 +52,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         btnSend.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if(imgsend_email.getVisibility() == View.VISIBLE){
+               /* if(imgsend_email.getVisibility() == View.VISIBLE){
                     validacionCampos();
 
 
@@ -61,8 +61,8 @@ public class SignUpActivity extends AppCompatActivity {
                     textTypeCode.setVisibility(View.VISIBLE);
                     txtvResend.setVisibility(View.VISIBLE);
                     btnInsertCode.setVisibility(View.VISIBLE);
-            }
-
+            }*/
+                validacionCampos();
         }
     });
     }
