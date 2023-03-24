@@ -2,10 +2,14 @@ package com.administrador.agua;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,7 +26,9 @@ public class SignUpActivity extends AppCompatActivity {
     private EditText edtMail, edttype_code;
     private ImageView imgsend_email;
     private RelativeLayout textTypeCode;
-    private TextView txtvResend;
+    private TextView txtvResend, txtCountDown;
+
+    String TAG = "Main";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +46,7 @@ public class SignUpActivity extends AppCompatActivity {
         textTypeCode = findViewById(R.id.txtb_typecode);
         txtvResend = findViewById(R.id.txtv_resend_email);
         btnInsertCode = findViewById(R.id.btn_insert_code);
+        txtCountDown = findViewById(R.id.txtCountDown);
 
         edtMail.setBackgroundColor(Color.TRANSPARENT);
         edttype_code.setBackgroundColor(Color.TRANSPARENT);
@@ -65,6 +72,54 @@ public class SignUpActivity extends AppCompatActivity {
                 validacionCampos();
         }
     });
+        Intent intent = new Intent(this, BroadcastService.class);
+        startService(intent);
+        Log.i(TAG, "Started");
+    }
+
+    private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            updateGUI(intent);
+        }
+    };
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        registerReceiver(broadcastReceiver, new IntentFilter(BroadcastService.COUNTDOWN_BR));
+        Log.i(TAG, "Registered broadcast receiver");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        unregisterReceiver(broadcastReceiver);
+    }
+
+    @Override
+    protected void onStop() {
+
+        try {
+            unregisterReceiver(broadcastReceiver);
+        } catch (Exception e) {
+
+        }
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        stopService(new Intent(this, BroadcastService.class));
+        Log.i(TAG, "STOPPED");
+        super.onDestroy();
+    }
+
+    private void updateGUI(Intent intent){
+        if (intent.getExtras() != null){
+            long millisUntilFinished = intent.getLongExtra("contdown", 60000);
+            txtCountDown.setText(Long.toString(millisUntilFinished / 1000));
+        }
     }
 
     public void validacionCampos(){

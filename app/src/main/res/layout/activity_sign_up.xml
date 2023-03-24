@@ -121,20 +121,6 @@
                 android:textSize="18sp" />
         </RelativeLayout>
 
-        <Chronometer
-            android:id="@+id/cronometro"
-            android:layout_width="80dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtb_typecode" />
-
         <Button
             android:id="@+id/btn_insert_code"
             android:layout_width="150dp"
@@ -159,7 +145,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="192dp"
             android:text="@string/txtv_resend_email"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textColor="#FFA726"
             android:visibility="invisible"
             android:textAlignment="center"
@@ -167,6 +153,20 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtb_typecode" />
+
+        <TextView
+            android:id="@+id/txtCountDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_send_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtb_email"
+            app:layout_constraintVertical_bias="0.694" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
